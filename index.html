@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-14">
+    <header class="container mx-auto mt-14 px-6 sm:px-0 mb-32">
         <!-- nav -->
         <nav class="ralway">
             <div>
@@ -60,7 +60,7 @@
                                 </svg>
                             </div>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                class="menu menu-sm dropdown-content bg-white  rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                 <li><a>Home</a></li>
                                 <li>
                                     <a>About</a>
@@ -69,7 +69,7 @@
                                 <li><a>Search</a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-ghost text-4xl hidden sm:block">P-Ticket</a>
+                        <a class="btn btn-ghost text-4xl hidden sm:block font-extrabold">P-Ticket</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 space-x-14">
@@ -86,12 +86,83 @@
             </div>
         </nav>
         <!-- banner -->
-        <section>
+        <section class="hero rounded-3xl w-full min-h-[450px]  sm:min-h-[720px]"
+            style="background-image: url(images/banner.png);">
+            <div>
+                <!-- banner content -->
+                <div class="text-center p-4">
+                    <h1 class="text-5xl md:text-[64px] font-extrabold ralway text-white">
+                        End-to-End Travel with
+                        <br class="hidden md:block">
+                        <span class="green-text">P Paribahan</span>
+                    </h1>
+                    <p class="font-normal text-lg inter text-white mt-4 md:mb-8">Yes, you can run unit tests and view
+                        the
+                        results directly within the app. The <br class="hidden md:block"> integrated testing features
+                        allow for a streamlined .</p>
+                    <button
+                        class="btn btn-ghost px-7 py-2 green-back rounded-xl text-black font-bold text-xl raleway">Buy
+                        Tickets</button>
+                </div>
 
+            </div>
         </section>
-    </header>
-    <main>
+        <!-- card container -->
+        <div class="-mt-2 md:-mt-16">
+            <div class="flex flex-col items-center md:flex-row gap-6 justify-center">
+                <!-- card-1 -->
+                <div class="bg-white max-w-[308px] border-b-[3px] rounded-3xl p-8  border-b-[#1DD100]">
+                    <div class="flex gap-4">
+                        <div>
+                            <img src="images/people.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="black inter text-4xl font-bold">500K+</h2>
+                            <p class="text-[#03071299] text-lg font-normal inter">Registered users</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-white max-w-[308px] border-b-[3px] rounded-3xl p-8  border-b-[#1DD100]">
+                    <div class="flex gap-4">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="black inter text-4xl font-bold">1.7 lacks</h2>
+                            <p class="text-[#03071299] text-lg font-normal inter">1.7 lacks</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="bg-white max-w-[308px] border-b-[3px] rounded-3xl p-8  border-b-[#1DD100]">
+                    <div class="flex gap-4">
+                        <div>
+                            <img src="images/stoppage.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="black inter text-4xl font-bold">80K+</h2>
+                            <p class="text-[#03071299] text-lg font-normal inter">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- offers section -->
+        <section>
+            <h2 class="black ralway text-center font-bold text-4xl mb-12">Best offers for you</h2>
+            <!-- offer 1 -->
+            <div class="">
+                <div class="bg-[#FFBF0F] p-11">
+                    <h1>15% OFF</h1>
+                    <p>on your next purchase</p>
+                    <small>use by January 2024</small>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
