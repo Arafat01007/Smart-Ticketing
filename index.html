@@ -157,18 +157,18 @@
     </header>
     <main class="">
         <!-- offers section -->
-        <section class="inter container mx-auto">
+        <section class="inter container mx-auto p-4">
             <h2 class="black ralway text-center font-bold text-4xl mb-12">Best offers for you</h2>
             <!-- offer container -->
             <div class="flex flex-col xl:flex-row gap-6 justify-center">
                 <!-- offer 1 -->
-                <div class="flex rounded-3xl  bg-[#FFBF0F]">
-                    <div class=" p-11 w-2/3 ">
+                <div class="flex flex-col md:flex-row rounded-3xl justify-center items-center  bg-[#FFBF0F]">
+                    <div class="p-11 md:w-1/2 xl:w-auto border-b-2 md:border-none border-dashed border-black">
                         <h1 class="text-[40px] font-black text-[#030712cc] ">15% OFF</h1>
                         <p class="text-xl font-semibold text-[#030712cc]">on your next purchase</p>
                         <small class="text-[#03071280] text-lg font-medium">use by January 2024</small>
                     </div>
-                    <div class="">
+                    <div class="hidden md:block">
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="py-16 px-11 flex flex-col justify-center items-center">
@@ -177,13 +177,13 @@
                     </div>
                 </div>
                 <!-- offer 2 -->
-                <div class="flex rounded-3xl bg-[#F78C9C]">
-                    <div class=" p-11 w-2/3 ">
+                <div class="flex flex-col md:flex-row justify-center items-center rounded-3xl bg-[#F78C9C]">
+                    <div class="p-11 md:w-1/2 xl:w-auto border-b-2 border-dashed md:border-none border-black">
                         <h1 class="text-[40px] font-black text-[#030712cc] ">20% OFF</h1>
                         <p class="text-xl font-semibold text-[#030712cc]">on your next purchase</p>
                         <small class="text-[#03071280] text-lg font-medium">use by January 2024</small>
                     </div>
-                    <div class="">
+                    <div class="hidden md:block">
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="py-16 px-11 flex flex-col justify-center items-center">
@@ -199,33 +199,33 @@
             </div>
         </section>
         <!-- seat selection section -->
-        <section id="seat-selection" class="bg-[#F7F8F8] mt-28 py-28">
+        <section id="seat-selection" style="border-radius: 88px 88px 0 0;" class="bg-[#F7F8F8] mt-28 py-28 p-4 md:p-0 ">
             <div class="container mx-auto mb-11">
                 <!-- section heading -->
-                <div>
+                <div class="mb-11">
                     <h2 class="black ralway text-center font-bold text-4xl mb-6">P.H Paribahan</h2>
                     <p class="text-[#03071299] text-lg font-normal inter text-center">
                         Yes, you can run unit tests and view the results directly within the app. The integrated
-                        <br>
+                        <br class="hidden lg:block">
                         testing features allow for a streamlined.
                     </p>
                 </div>
                 <!--------------- info --------------->
                 <div class="flex flex-col md:flex-row bg-white rounded-3xl">
-                    <div class="p-8 w-3/4">
-                        <div class="flex justify-between">
-                            <div class="flex items-center gap-4">
+                    <div class="p-8 md:w-3/4 border-b-2 border-gray-300 border-dashed ">
+                        <div class="flex justify-between flex-col lg:flex-row">
+                            <div class="flex items-center gap-4 text-center">
                                 <div>
                                     <img src="images/bus-logo.png" alt="">
                                 </div>
                                 <div>
                                     <h1 class="black ralway font-bold text-[32px]">Greenline Paribahan</h1>
-                                    <p class="text-[#03071299] text-lg font-normal inter">Coach-009-WEB !
+                                    <p class="text-[#03071299] text-sm md:text-lg font-normal inter">Coach-009-WEB !
                                         AC_Business</p>
                                 </div>
                             </div>
-                            <div>
-                                <a class="bg-[#1dd10026] green-text font-medium inter text-lg p-4 flex gap-1 rounded-xl"
+                            <div class="mt-4">
+                                <a class="bg-[#1dd10026] green-text font-medium inter text-lg p-2 md:p-4 flex gap-1 rounded-xl"
                                     href="#faltu-website">
                                     <img src="images/seat-green.png" alt="">
                                     40 Seats left
@@ -235,11 +235,13 @@
                         <!-- inner -->
                         <div class="flex">
                             <div class="bg-[#F7F8F8]  mt-6 p-8 rounded-3xl w-full">
-                                <div class="flex justify-between border-b border-[#03071233] border-dashed pb-6">
+                                <div
+                                    class="flex flex-col items-center sm:justify-between sm:flex-row border-b border-[#03071233] border-dashed pb-6">
                                     <h4 class="text-[#03071299] text-lg font-normal inter">Route</h4>
                                     <h4 class="font-semibold text-lg ralway black">Dhaka - Sylhet</h4>
                                 </div>
-                                <div class="flex justify-between border-b border-[#03071233] border-dashed pb-6 mt-6">
+                                <div
+                                    class="flex flex-col items-center sm:justify-between sm:flex-row border-b border-[#03071233] border-dashed pb-6 mt-6">
                                     <h4 class="text-[#03071299] text-lg font-normal inter">Departure Time</h4>
                                     <h4 class="font-semibold text-lg ralway black">9:00 PM</h4>
                                 </div>
@@ -247,11 +249,11 @@
 
                         </div>
                     </div>
-                    <div class=" ">
+                    <div class=" hidden lg:block  ">
                         <img src="images/info-devider.png" alt="">
                     </div>
                     <div class="flex justify-center items-center">
-                        <div class="mt-6 p-16 ">
+                        <div class="mt-6 p-16">
                             <div>
                                 <div class="flex flex-col justify-center items-center">
                                     <img src="images/fare.png" alt="">
@@ -263,14 +265,14 @@
                     </div>
                 </div>
                 <!-- selection area -->
-                <div class="bg-white mt-7 p-8 rounded-3xl flex">
-                    <div class="w-3/5 border-r-2 border-[#0307124d] border-dashed pr-8 mt-8">
+                <div class="bg-white mt-7 p-8 rounded-3xl flex flex-col xl:flex-row">
+                    <div class="border-none xl:border-r-2 border-[#0307124d] xl:border-dashed pr-8 ">
                         <!-- heading -->
                         <div>
                             <h3
                                 class="black ralway font-semibold text-2xl border-b border-[#03071233] border-dashed pb-6">
                                 Select Your Seat</h3>
-                            <div class="mt-4 flex justify-between">
+                            <div class="mt-4 flex justify-between border-b border-[#03071233] border-dashed pb-6">
                                 <h5 class="flex gap-1 text-[#03071280] text-lg font-medium">
                                     <img src="images/seat-gray.png" alt="">
                                     Available
@@ -281,9 +283,133 @@
                                 </h5>
                             </div>
                         </div>
+                        <div class="flex justify-end">
+                            <button class="border-none bg-[#0307121a] px-10 py-3 rounded-xl cursor-default my-6">
+                                <img src="images/tabler-icon-steering-wheel.png" alt="">
+                            </button>
+                        </div>
+                        <!-- seat selection -->
+                        <div class="flex justify-center items-center">
+                            <div class="flex lg:gap-10 gap-4">
+                                <!-- a to j row -->
+                                <div class="flex flex-col gap-16 items-center justify-center">
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">A</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">B</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">C</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">D</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">E</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">F</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">G</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">H</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">I</h3>
+                                    <h3 class="font-medium text-lg text-[#03071280] inter">J</h3>
+                                </div>
+                                <!-- seats -->
+                                <div class="flex  xl:gap-40 md:gap-12 gap-8">
+                                    <!-- seat side-1 -->
+                                    <div class="grid grid-cols-2 gap-8 sm:gap-4">
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">A1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">A2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">b1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">b2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">c1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">c2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">d1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">d2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">e1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">e2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">f1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">f2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">g1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">g2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">h1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">h2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">i1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">i2</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">j1</div>
+                                        <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">j2</div>
+                                    </div>
+                                    <!-- seat side-2 -->
+                                    <div>
+                                        <div class="grid grid-cols-2 gap-8">
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">A3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">A4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">b3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">b4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">c3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">c4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">d3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">d4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">e3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">e4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">f3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">f4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">g3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">g4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">h3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">h4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">i3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">i4</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">j3</div>
+                                            <div class="sm:px-11 px-4 py-4 rounded-xl uppercase bg-[#F7F8F8]">j4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-
+                    <!-- email , payment section -->
+                    <div class="xl:w-2/4 xl:pl-8 mt-16">
+                        <!-- heading of email/payment section -->
+                        <div>
+                            <h3
+                                class="black ralway font-semibold text-2xl border-b border-[#03071233] border-dashed pb-6">
+                                Select Your Seat</h3>
+                        </div>
+                        <!-- payment section -->
+                        <div class="bg-[#F7F8F8] p-8 mt-6 rounded-xl ">
+                            <div>
+                                <table class="table">
+                                    <tr class="border-b border-[#03071233] border-dashed pb-6">
+                                        <th>Seat</th>
+                                        <th>Class</th>
+                                        <th class="flex justify-end">Price</th>
+                                    </tr>
+                                    <tr class="border-b border-[#03071233]">
+                                        <th>C2</th>
+                                        <th class="">Economoy</th>
+                                        <th class="flex justify-end">550</th>
+                                    </tr>
+                                </table>
+                                <!-- total -->
+                                <div class="black inter text-base font-medium flex justify-between mt-4">
+                                    <p>Total Price</p>
+                                    <p>BDT 1100</p>
+                                </div>
+                                <!-- coupon input -->
+                                <div class="mt-4 flex">
+                                    <input type="text"
+                                        class=" -black placeholder:text-sm placeholder:text-[#03071266]  inter font-normal"
+                                        placeholder="Have any copupon?">
+                                    <button style="border-radius:0 8px 8px 0;"
+                                        class="green-back hover:bg-green-500 text-white  -ml-20 px-5">
+                                        Apply
+                                    </button>
+                                </div>
+                                <!-- grand total -->
+                                <div class="black inter text-base font-medium flex justify-between mt-4">
+                                    <p>Grand Price</p>
+                                    <p>BDT 1100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form -->
+                        <div>
+                            <form>
+                                <label for=""></label>
+                                <input type="text">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
