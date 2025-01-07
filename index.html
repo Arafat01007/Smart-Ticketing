@@ -200,7 +200,7 @@
         </section>
         <!-- seat selection section -->
         <section id="seat-selection" style="border-radius: 88px 88px 0 0;" class="bg-[#F7F8F8] mt-28 py-28 p-4 md:p-0 ">
-            <div class="container mx-auto mb-11">
+            <div class="container mx-auto">
                 <!-- section heading -->
                 <div class="mb-11">
                     <h2 class="black ralway text-center font-bold text-4xl mb-6">P.H Paribahan</h2>
@@ -265,8 +265,8 @@
                     </div>
                 </div>
                 <!-- selection area -->
-                <div class="bg-white mt-7 p-8 rounded-3xl flex flex-col xl:flex-row">
-                    <div class="border-none xl:border-r-2 border-[#0307124d] xl:border-dashed pr-8 ">
+                <div class="bg-white mt-7 p-8 rounded-3xl flex flex-col xl:flex-row ">
+                    <div class="border-none xl:border-r-2 border-[#0307124d] xl:border-dashed pr-8 mb-28 ">
                         <!-- heading -->
                         <div>
                             <h3
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                     <!-- email , payment section -->
-                    <div class="xl:w-2/4 xl:pl-8 mt-16">
+                    <div class="xl:w-2/4 xl:pl-8 mt-16 xl:mt-0">
                         <!-- heading of email/payment section -->
                         <div>
                             <h3
@@ -389,7 +389,7 @@
                                 <!-- coupon input -->
                                 <div class="mt-4 flex">
                                     <input type="text"
-                                        class=" -black placeholder:text-sm placeholder:text-[#03071266]  inter font-normal"
+                                        class="black placeholder:text-sm placeholder:text-[#03071266] w-full py-5 rounded-xl border-none outline-none pl-5  inter font-normal"
                                         placeholder="Have any copupon?">
                                     <button style="border-radius:0 8px 8px 0;"
                                         class="green-back hover:bg-green-500 text-white  -ml-20 px-5">
@@ -404,19 +404,49 @@
                             </div>
                         </div>
                         <!-- form -->
-                        <div>
+                        <div class="mt-6 ">
                             <form>
-                                <label for=""></label>
-                                <input type="text">
+                                <label class=" inter text-base black font-semibold" for="name">Passenger Name</label>
+                                <br>
+                                <input
+                                    class="w-full py-5 outline-none mb-6 mt-4 border rounded-xl border-[#0307121a] pl-6 black placeholder:text-sm placeholder:text-[#03071266]   inter font-normal"
+                                    type="text" name="name" id="pas-name" placeholder="Enter your name">
+                                <label class=" inter text-base black font-semibold" for="phone">Phone Number</label>
+                                <br>
+                                <input
+                                    class="w-full py-5 mt-4 mb-6 outline-none border rounded-xl border-[#0307121a] pl-6 black placeholder:text-sm placeholder:text-[#03071266]   inter font-normal"
+                                    type="tel" name="phone" id="pas-num" placeholder="Enter your phone number">
+                                <label class=" inter text-base black font-semibold" for="email">Email ID</label>
+                                <br>
+                                <input
+                                    class="w-full py-5 mt-4 mb-6 outline-none border rounded-xl border-[#0307121a] pl-6 black placeholder:text-sm placeholder:text-[#03071266]   inter font-normal"
+                                    type="email" name="email" id="pas-email" placeholder="Enter your email id">
+                                <button
+                                    class="w-full green-back rounded-2xl py-5 text-white text-xl font-extrabold text-center ralway">Next</button>
                             </form>
+                            <!-- form footer -->
+                            <div class="flex justify-center gap-11 mt-6 items-center">
+                                <p class="text-base inter font-medium underline text-[#03071299] cursor-pointer">Terms
+                                    and Conditions</p>
+                                <p class="text-base inter font-medium underline text-[#03071299] cursor-pointer">
+                                    Cancellation Policy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <!-- footer -->
+    <footer class="px-28 py-28 bg-[black]">
+        <div>
+            <div>
 
+            </div>
+            <div>
+
+            </div>
+        </div>
     </footer>
 </body>
 
