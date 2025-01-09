@@ -15,7 +15,6 @@ for (const seat of seats) {
         } else {
             alert('You can only select up to 4 seats.');
         }
-        console.log(clickCount);
         const seatCountElement = document.getElementById('seat-count');
         const defaultSeatCount = 40;
         const seatCount = defaultSeatCount - clickCount;
@@ -23,8 +22,25 @@ for (const seat of seats) {
         const seatNum = document.getElementById('seat-num');
         seatNum.innerText = clickCount;
         seatNum.classList.remove('hidden');
-        if(clickCount ===0){
+
+      
+
+        const t = document.createElement('tr');
+        t.innerHTML = `
+            <th class = "seat-id"></th>
+            <th id="seat-type" class="">Economoy</th>
+            <th id="seat-priec" class="flex justify-end"></th>
+        `;
+        const table = document.getElementById('table');
+        table.appendChild(t);
+          // seat payment
+        const seatId = document.getElementsByClassName('seat-id');
+        const seatInner = seat.innerText;
+        seatId.innerText = seatInner;
+        console.log(seatId);
+        if (clickCount === 0) {
             seatNum.classList.add('hidden');
+            seatId.innerText = '';
         }
     });
 }
