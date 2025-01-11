@@ -2,6 +2,11 @@
 const seats = document.getElementsByClassName('btn-seat');
 let clickCount = 0;
 let totalPrice = 0;
+// getelementbyid
+function element(elementId) {
+    const el = document.getElementById(elementId);
+    return el;
+}
 
 
 for (const seat of seats) {
@@ -58,12 +63,82 @@ for (const seat of seats) {
         }
 
         const totalPriceElement = document.getElementById('total');
-        let totalPriceText = cell3.innerText;
-        let totalPriceInt = parseInt(totalPriceText.replace('tk', ''));
-        totalPrice += totalPriceInt;
-        totalPriceElement.innerText = totalPrice + 'tk';
-        console.log(totalPrice);
+        let totalPriceInt = 550; // fixed price for economy class
 
-
+        if (seat.classList.contains('bg-[#1dd100]')) {
+            totalPrice += totalPriceInt;
+        }
+        else {
+            totalPrice -= totalPriceInt;
+        }
+        totalPriceElement.innerText = totalPrice;
+        // enable coupon button
+        // enable coupon button
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = totalPrice;
     });
 }
+const couBtn = document.getElementById('coupon-btn');
+const coupInput = document.getElementById('coupon-input');
+const grandTotal = document.getElementById('grand-total');
+
+grandTotal.innerText = totalPrice;
+coupInput.addEventListener('input', function () {
+    if (coupInput.value === 'NEW15' || coupInput.value === 'COUPLE20') {
+        couBtn.disabled = false;
+    } else {
+        couBtn.disabled = true;
+    }
+});
+
+
+couBtn.addEventListener('click', function () {
+    if (coupInput.value === 'NEW15') {
+        const dis15 = 15 / 100;
+        const discount = totalPrice * dis15;
+        const discountedPrice = totalPrice - discount;
+        grandTotal.innerText = discountedPrice;
+    }
+    else if (coupInput.value === 'COUPLE20') {
+        const dis20 = 20 / 100;
+        const discount2 = totalPrice * dis20;
+        const disPrice2 = totalPrice - discount2;
+        grandTotal.innerText = disPrice2;
+    }
+});
+const numberInput = document.getElementById('pas-num');
+const nextBtn = document.getElementById('next-btn');
+
+
+numberInput.addEventListener('input', function () {
+    if (numberInput.value.trim() !== '' && !isNaN(numberInput.value) && clickCount !== 0) {
+        nextBtn.disabled = false;
+        nextBtn.addEventListener('click', function () {
+            const head = element('head');
+            const main = element('main');
+            const foot = element('foot');
+            head.classList.add('hidden');
+            main.classList.add('hidden');
+            foot.classList.add('hidden');
+
+            const contSec = element('cont-section');
+            contSec.classList.remove('hidden');
+        })
+    } else {
+        nextBtn.disabled = true;
+    }
+});
+// continue button onclick function
+function btnOnclick(){
+    const head = element('head');
+    const main = element('main');
+    const foot = element('foot');
+    head.classList.remove('hidden');
+    main.classList.remove('hidden');
+    foot.classList.remove('hidden');
+
+    const contSec = element('cont-section');
+    contSec.classList.add('hidden');
+}
+
+
